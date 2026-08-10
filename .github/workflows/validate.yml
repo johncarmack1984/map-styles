@@ -18,6 +18,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Validate stylesheets against the MapLibre style spec
+        run: npm run validate
+
       - name: Build /dist
         run: npm run build
 

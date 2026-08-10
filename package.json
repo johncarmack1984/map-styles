@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "scripts/prepare.js",
+    "validate": "scripts/validate.js",
     "start": "browser-sync start --server --port 8888 --https --startPath #7.33/40.487/-73.554 --files ['index.html', 'index.css', 'historical/*', 'railway/*', 'japanese_scroll/*', 'woodblock/*']"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "maplibre-gl-style-flipper": "^1.0.9"
   },
   "devDependencies": {
+    "@maplibre/maplibre-gl-style-spec": "^26.2.1",
     "browser-sync": "^3.0.4"
   }
 }
